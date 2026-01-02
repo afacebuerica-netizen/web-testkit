@@ -82,7 +82,7 @@ test.describe('SEO Checks', () => {
     expect(result.passed).toBe(true);
   });
 
-  test('check heading structure', async ({ page }) => {
+  test.only('check heading structure', async ({ page }) => {
     await gotoAndWait(page, 'https://anewbride.com/');
 
     const result = await checkHeadingStructure(page);

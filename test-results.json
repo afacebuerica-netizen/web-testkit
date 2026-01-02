@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "C:\\Users\\John Ranel\\Documents\\Cenix Files\\Unit testings\\ANewBride\\playwright.config.ts",
-    "rootDir": "C:/Users/John Ranel/Documents/Cenix Files/Unit testings/ANewBride/tests",
+    "configFile": "/Users/mba/Documents/ERICA WORK/web-testkit/playwright.config.ts",
+    "rootDir": "/Users/mba/Documents/ERICA WORK/web-testkit/tests",
     "forbidOnly": false,
     "fullyParallel": true,
     "globalSetup": null,
@@ -10,14 +10,14 @@
     "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
-    "metadata": {},
+    "metadata": {
+      "actualWorkers": 1
+    },
     "preserveOutput": "always",
     "reporter": [
       [
         "html",
-        {
-          "outputFolder": "playwright-report"
-        }
+        null
       ],
       [
         "json",
@@ -33,18 +33,20 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "C:/Users/John Ranel/Documents/Cenix Files/Unit testings/ANewBride/test-results",
+        "outputDir": "/Users/mba/Documents/ERICA WORK/web-testkit/test-results",
         "repeatEach": 1,
         "retries": 0,
-        "metadata": {},
+        "metadata": {
+          "actualWorkers": 1
+        },
         "id": "chromium",
         "name": "chromium",
-        "testDir": "C:/Users/John Ranel/Documents/Cenix Files/Unit testings/ANewBride/tests",
+        "testDir": "/Users/mba/Documents/ERICA WORK/web-testkit/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 30000
+        "timeout": 60000
       }
     ],
     "shard": null,
@@ -52,26 +54,89 @@
     "updateSnapshots": "missing",
     "updateSourceMethod": "patch",
     "version": "1.57.0",
-    "workers": 10,
+    "workers": 2,
     "webServer": null
   },
-  "suites": [],
-  "errors": [
+  "suites": [
     {
-      "message": "SyntaxError: C:\\Users\\John Ranel\\Documents\\Cenix Files\\Unit testings\\ANewBride\\tests\\interactive-accessibility.spec.ts: Unexpected reserved word 'await'. (73:8)\n\n  71 |       const element = elementsToTest[i];\n  72 |       const elementText = await element.textContent().catch(() => \n> 73 |         await element.getAttribute('aria-label').catch(() => 'unknown')\n     |         ^\n  74 |       );\n  75 |       \n  76 |       console.log(`Testing focused element ${i + 1}: \"${elementText?.trim()}\"`);",
-      "stack": "SyntaxError: C:\\Users\\John Ranel\\Documents\\Cenix Files\\Unit testings\\ANewBride\\tests\\interactive-accessibility.spec.ts: Unexpected reserved word 'await'. (73:8)\n\n  71 |       const element = elementsToTest[i];\n  72 |       const elementText = await element.textContent().catch(() => \n> 73 |         await element.getAttribute('aria-label').catch(() => 'unknown')\n     |         ^\n  74 |       );\n  75 |       \n  76 |       console.log(`Testing focused element ${i + 1}: \"${elementText?.trim()}\"`);",
-      "location": {
-        "file": "C:\\Users\\John Ranel\\Documents\\Cenix Files\\Unit testings\\ANewBride\\tests\\interactive-accessibility.spec.ts",
-        "line": 73,
-        "column": 8
-      },
-      "snippet": "   at interactive-accessibility.spec.ts:73\n\n  71 |       const element = elementsToTest[i];\n  72 |       const elementText = await element.textContent().catch(() => \n> 73 |         await element.getAttribute('aria-label').catch(() => 'unknown')\n     |        ^\n  74 |       );\n  75 |       \n  76 |       console.log(`Testing focused element ${i + 1}: \"${elementText?.trim()}\"`);"
+      "title": "url-audit.spec.ts",
+      "file": "url-audit.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Audit Test for: https://anewbride.com/",
+          "file": "url-audit.spec.ts",
+          "line": 26,
+          "column": 6,
+          "specs": [
+            {
+              "title": "broken links check only",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6312,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\nNavigating to: https://anewbride.com/\n"
+                        },
+                        {
+                          "text": "Successfully loaded: https://anewbride.com/\n"
+                        },
+                        {
+                          "text": "Found 0 unique links to check\n"
+                        },
+                        {
+                          "text": "\nBroken Links Check for: https://anewbride.com/\n"
+                        },
+                        {
+                          "text": "✅ No broken links found!\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-02T03:45:47.924Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/mba/Documents/ERICA WORK/web-testkit/test-results/url-audit-Audit-Test-for-h-9ea74-com-broken-links-check-only-chromium/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1dfaec8f1a7c1d32c104-ce1bc4fbf5e3884a9cb9",
+              "file": "url-audit.spec.ts",
+              "line": 122,
+              "column": 7
+            }
+          ]
+        }
+      ]
     }
   ],
+  "errors": [],
   "stats": {
-    "startTime": "2025-12-23T04:32:58.203Z",
-    "duration": 113.41699999999992,
-    "expected": 0,
+    "startTime": "2026-01-02T03:45:45.876Z",
+    "duration": 10037.949,
+    "expected": 1,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
