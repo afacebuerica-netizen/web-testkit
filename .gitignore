@@ -10,6 +10,3 @@
 
 # GitHub Pages reports (optional - comment out if you want to commit these)
 # /gh-pages-reports/
-
-# Playwright
-node_modules/

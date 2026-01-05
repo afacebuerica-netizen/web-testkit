@@ -2,18 +2,6 @@ import { Page, APIRequestContext } from '@playwright/test';
 import { URL } from 'url';
 
 /**
- * Interface for link element information
- */
-export interface LinkElementInfo {
-  url: string;
-  text: string | null;
-  html: string;
-  selector: string;
-  tagName: string;
-  href: string;
-}
-
-/**
  * Interface for link check results
  */
 export interface LinkCheckResult {
@@ -22,59 +10,28 @@ export interface LinkCheckResult {
   statusText: string;
   isBroken: boolean;
   error?: string;
-  // Element information - which elements on the page link to this URL
-  elements?: LinkElementInfo[];
 }
 
 /**
- * Extract all links from a page with element information
- * Returns a map of normalized URLs to their element information
+ * Extract all links from a page and normalize them to absolute URLs
  */
-export async function extractLinksWithElements(
-  page: Page,
-  baseUrl?: string
-): Promise<Map<string, LinkElementInfo[]>> {
+export async function extractLinks(page: Page, baseUrl?: string): Promise<string[]> {
   const currentUrl = page.url();
   const base = baseUrl || currentUrl;
   const baseUrlObj = new URL(base);
 
-  // Extract all href attributes from <a> tags with element information
-  const linkData = await page.evaluate(() => {
+  // Extract all href attributes from <a> tags
+  const links = await page.evaluate(() => {
     const anchors = Array.from(document.querySelectorAll('a[href]'));
-    return anchors.map((anchor, index) => {
-      const element = anchor as HTMLAnchorElement;
-      const text = element.textContent?.trim() || null;
-      const html = element.outerHTML.substring(0, 200); // Limit HTML length
-      const href = element.href;
-      
-      // Generate a simple selector (try id, class, or fallback to tag + index)
-      let selector = '';
-      if (element.id) {
-        selector = `#${element.id}`;
-      } else if (element.className) {
-        const classes = element.className.split(' ').filter(c => c).slice(0, 2).join('.');
-        selector = `a.${classes}`;
-      } else {
-        selector = `a:nth-of-type(${index + 1})`;
-      }
-
-      return {
-        href,
-        text,
-        html,
-        selector,
-        tagName: element.tagName.toLowerCase(),
-      };
-    });
+    return anchors.map(anchor => (anchor as HTMLAnchorElement).href);
   });
 
-  // Normalize URLs and group elements by normalized URL
-  const linkMap = new Map<string, LinkElementInfo[]>();
+  // Normalize URLs and filter out invalid ones
+  const normalizedLinks: string[] = [];
+  const seen = new Set<string>();
 
-  for (const linkInfo of linkData) {
+  for (const link of links) {
     try {
-      const link = linkInfo.href;
-      
       // Skip empty, javascript:, mailto:, tel:, and anchor-only links
       if (!link || link.startsWith('javascript:') || link.startsWith('mailto:') || link.startsWith('tel:') || link.startsWith('#')) {
         continue;
@@ -91,34 +48,18 @@ export async function extractLinksWithElements(
       // Remove hash fragments and trailing slashes for consistency
       const normalizedUrl = absoluteUrl.split('#')[0].replace(/\/$/, '');
 
-      // Group elements by normalized URL
-      if (!linkMap.has(normalizedUrl)) {
-        linkMap.set(normalizedUrl, []);
+      // Deduplicate
+      if (!seen.has(normalizedUrl)) {
+        seen.add(normalizedUrl);
+        normalizedLinks.push(normalizedUrl);
       }
-      linkMap.get(normalizedUrl)!.push({
-        url: normalizedUrl,
-        text: linkInfo.text,
-        html: linkInfo.html,
-        selector: linkInfo.selector,
-        tagName: linkInfo.tagName,
-        href: linkInfo.href,
-      });
     } catch (error) {
       // Skip invalid URLs
-      console.warn(`Invalid URL skipped: ${linkInfo.href}`);
+      console.warn(`Invalid URL skipped: ${link}`);
     }
   }
 
-  return linkMap;
-}
-
-/**
- * Extract all links from a page and normalize them to absolute URLs
- * @deprecated Use extractLinksWithElements for better element tracking
- */
-export async function extractLinks(page: Page, baseUrl?: string): Promise<string[]> {
-  const linkMap = await extractLinksWithElements(page, baseUrl);
-  return Array.from(linkMap.keys());
+  return normalizedLinks;
 }
 
 /**
@@ -186,7 +127,7 @@ export async function checkLinks(
 
 /**
  * Check all links on a page for broken links
- * Returns only broken links with element information
+ * Returns only broken links
  */
 export async function checkBrokenLinks(
   page: Page,
@@ -194,31 +135,20 @@ export async function checkBrokenLinks(
   baseUrl?: string,
   concurrency: number = 10
 ): Promise<LinkCheckResult[]> {
-  // Extract all links with element information
-  const linkMap = await extractLinksWithElements(page, baseUrl);
-  const links = Array.from(linkMap.keys());
+  // Extract all links from the page
+  const links = await extractLinks(page, baseUrl);
   
-  console.log(`Found ${links.length} unique links to check`);
+  console.log(`Found ${links.length} links to check`);
 
   // Check all links
   const results = await checkLinks(request, links, concurrency);
 
-  // Add element information to results and filter to only broken links
-  const brokenLinks = results
-    .filter(result => result.isBroken)
-    .map(result => {
-      const elements = linkMap.get(result.url) || [];
-      return {
-        ...result,
-        elements: elements.length > 0 ? elements : undefined,
-      };
-    });
-
-  return brokenLinks;
+  // Filter to only broken links
+  return results.filter(result => result.isBroken);
 }
 
 /**
- * Format broken links results for reporting with element information
+ * Format broken links results for reporting
  */
 export function formatBrokenLinksReport(brokenLinks: LinkCheckResult[]): string {
   if (brokenLinks.length === 0) {
@@ -228,33 +158,14 @@ export function formatBrokenLinksReport(brokenLinks: LinkCheckResult[]): string 
   let report = `❌ Found ${brokenLinks.length} broken link(s):\n\n`;
   
   for (const link of brokenLinks) {
-    report += `${'─'.repeat(80)}\n`;
-    report += `🔗 Broken URL: ${link.url}\n`;
-    report += `   Status: ${link.status} ${link.statusText}\n`;
+    report += `  ${link.url}\n`;
+    report += `    Status: ${link.status} ${link.statusText}\n`;
     if (link.error) {
-      report += `   Error: ${link.error}\n`;
+      report += `    Error: ${link.error}\n`;
     }
-    
-    // Show which elements on the page link to this broken URL
-    if (link.elements && link.elements.length > 0) {
-      report += `\n   📍 Found on page (${link.elements.length} element(s)):\n\n`;
-      
-      link.elements.forEach((element, index) => {
-        report += `   Element ${index + 1}:\n`;
-        report += `      Selector: ${element.selector}\n`;
-        report += `      Link Text: ${element.text || '(empty or no text)'}\n`;
-        report += `      Tag: <${element.tagName}>\n`;
-        report += `      HTML: ${element.html.substring(0, 150)}${element.html.length > 150 ? '...' : ''}\n`;
-        report += `      Original href: ${element.href}\n`;
-        report += '\n';
-      });
-    } else {
-      report += `\n   ⚠️  No element information available (link may be dynamically generated)\n\n`;
-    }
+    report += '\n';
   }
 
-  report += `${'─'.repeat(80)}\n`;
   return report;
 }
-
 

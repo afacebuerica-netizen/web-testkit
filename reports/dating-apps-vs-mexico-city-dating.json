@@ -1,0 +1,360 @@
+{
+  "url": "https://mexicocitydating.com/dating-apps-vs-mexico-city-dating.html",
+  "timestamp": "2026-01-05T02:11:59.329Z",
+  "summary": {
+    "overallStatus": "failed",
+    "seoPassed": true,
+    "brokenLinksCount": 12,
+    "accessibilityPassed": false
+  },
+  "seo": {
+    "results": [
+      {
+        "check": "Page Title",
+        "passed": true,
+        "message": "Page title is present: \"Dating Apps vs. Mexico City Dating\"",
+        "value": "Dating Apps vs. Mexico City Dating"
+      },
+      {
+        "check": "Meta Description",
+        "passed": true,
+        "message": "Meta description has appropriate length (150 chars)",
+        "value": "Find out why Mexico City Dating is a more reliable option than regular dating apps when it comes to finding love and building long-term relationships."
+      },
+      {
+        "check": "Canonical URL",
+        "passed": true,
+        "message": "Canonical URL is present: \"https://mexicocitydating.com/dating-apps-vs-mexico-city-dating.html\"",
+        "value": "https://mexicocitydating.com/dating-apps-vs-mexico-city-dating.html"
+      },
+      {
+        "check": "Robots Meta Tag",
+        "passed": true,
+        "message": "Robots meta tag is properly configured: \"index, follow\"",
+        "value": "index, follow"
+      },
+      {
+        "check": "Image Alt Attributes",
+        "passed": true,
+        "message": "All 11 images have alt attributes"
+      },
+      {
+        "check": "Heading Structure",
+        "passed": true,
+        "message": "Proper heading structure: 1 H1 found",
+        "value": "H1: Dating Apps vs. Mexico City Dating"
+      }
+    ],
+    "passedCount": 6,
+    "totalCount": 6,
+    "failedChecks": []
+  },
+  "brokenLinks": {
+    "totalChecked": 12,
+    "brokenCount": 12,
+    "brokenLinks": [
+      {
+        "url": "https://mexicocitydating.com/latin_club",
+        "status": 404,
+        "statusText": "Not Found",
+        "isBroken": true
+      },
+      {
+        "url": "https://mexicocitydating.com/search-nikolaev-women-seeking-men",
+        "status": 404,
+        "statusText": "Not Found",
+        "isBroken": true
+      },
+      {
+        "url": "https://mexicocitydating.com/gifts",
+        "status": 404,
+        "statusText": "Not Found",
+        "isBroken": true
+      },
+      {
+        "url": "https://mexicocitydating.com/fiancee-visa",
+        "status": 404,
+        "statusText": "Not Found",
+        "isBroken": true
+      },
+      {
+        "url": "https://mexicocitydating.com/dating",
+        "status": 404,
+        "statusText": "Not Found",
+        "isBroken": true
+      },
+      {
+        "url": "https://mexicocitydating.com/culture",
+        "status": 404,
+        "statusText": "Not Found",
+        "isBroken": true
+      },
+      {
+        "url": "https://mexicocitydating.com/psychology",
+        "status": 404,
+        "statusText": "Not Found",
+        "isBroken": true
+      },
+      {
+        "url": "https://mexicocitydating.com/travel",
+        "status": 404,
+        "statusText": "Not Found",
+        "isBroken": true
+      },
+      {
+        "url": "https://mexicocitydating.com/realities",
+        "status": 404,
+        "statusText": "Not Found",
+        "isBroken": true
+      },
+      {
+        "url": "https://mexicocitydating.com/our-Process",
+        "status": 404,
+        "statusText": "Not Found",
+        "isBroken": true
+      },
+      {
+        "url": "https://www.facebook.com/mexicocitydatingofficial",
+        "status": 400,
+        "statusText": "Bad Request",
+        "isBroken": true
+      },
+      {
+        "url": "https://x.com/MexiCityDating",
+        "status": 403,
+        "statusText": "Forbidden",
+        "isBroken": true
+      }
+    ]
+  },
+  "accessibility": {
+    "passed": false,
+    "totalViolations": 3,
+    "totalIncomplete": 0,
+    "violations": [
+      {
+        "id": "button-name",
+        "impact": "critical",
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412",
+          "section508",
+          "section508.22.a",
+          "TTv5",
+          "TT6.a",
+          "EN-301-549",
+          "EN-9.4.1.2",
+          "ACT",
+          "RGAAv4",
+          "RGAA-11.9.1"
+        ],
+        "description": "Ensure buttons have discernible text",
+        "help": "Buttons must have discernible text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "button-has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element does not have inner text that is visible to screen readers"
+              },
+              {
+                "id": "aria-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "aria-label attribute does not exist or is empty"
+              },
+              {
+                "id": "aria-labelledby",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+              },
+              {
+                "id": "non-empty-title",
+                "data": {
+                  "messageKey": "noAttr"
+                },
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element has no title attribute"
+              },
+              {
+                "id": "implicit-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element does not have an implicit (wrapped) <label>"
+              },
+              {
+                "id": "explicit-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element does not have an explicit <label>"
+              },
+              {
+                "id": "presentational-role",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "critical",
+            "html": "<button class=\"fc-megamenu\" type=\"button\" onclick=\"openNav()\">",
+            "target": [
+              ".fc-megamenu"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+          }
+        ]
+      },
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT",
+          "RGAAv4",
+          "RGAA-3.2.1"
+        ],
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#ffffff",
+                  "bgColor": "#0d9365",
+                  "contrastRatio": 3.9,
+                  "fontSize": "8.3pt (11px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<a id=\"signup\" href=\"#\" class=\"text-decoration-none top-header-signup\" data-bs-toggle=\"modal\" data-bs-target=\".register-modal\">",
+                    "target": [
+                      "#signup"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 3.9 (foreground color: #ffffff, background color: #0d9365, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a id=\"signup\" href=\"#\" class=\"text-decoration-none top-header-signup\" data-bs-toggle=\"modal\" data-bs-target=\".register-modal\">",
+            "target": [
+              "#signup"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.9 (foreground color: #ffffff, background color: #0d9365, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      },
+      {
+        "id": "link-name",
+        "impact": "serious",
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag244",
+          "wcag412",
+          "section508",
+          "section508.22.a",
+          "TTv5",
+          "TT6.a",
+          "EN-301-549",
+          "EN-9.2.4.4",
+          "EN-9.4.1.2",
+          "ACT",
+          "RGAAv4",
+          "RGAA-6.2.1"
+        ],
+        "description": "Ensure links have discernible text",
+        "help": "Links must have discernible text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element does not have text that is visible to screen readers"
+              },
+              {
+                "id": "aria-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-label attribute does not exist or is empty"
+              },
+              {
+                "id": "aria-labelledby",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+              },
+              {
+                "id": "non-empty-title",
+                "data": {
+                  "messageKey": "noAttr"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has no title attribute"
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element is in tab order and does not have accessible text"
+              }
+            ],
+            "impact": "serious",
+            "html": "<a href=\"\" class=\"go-btn\">",
+            "target": [
+              ".go-btn"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+          }
+        ]
+      }
+    ],
+    "incomplete": []
+  },
+  "metadata": {
+    "pageTitle": "Dating Apps vs. Mexico City Dating",
+    "metaDescription": "Find out why Mexico City Dating is a more reliable option than regular dating apps when it comes to finding love and building long-term relationships.",
+    "canonicalUrl": "https://mexicocitydating.com/dating-apps-vs-mexico-city-dating.html",
+    "robotsMetaTag": "index, follow"
+  }
+}

@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "/Users/mba/Documents/ERICA WORK/web-testkit/playwright.config.ts",
-    "rootDir": "/Users/mba/Documents/ERICA WORK/web-testkit/tests",
+    "configFile": "C:\\Users\\AM - Shift\\Documents\\web-testkit\\playwright.config.ts",
+    "rootDir": "C:/Users/AM - Shift/Documents/web-testkit/tests",
     "forbidOnly": false,
     "fullyParallel": true,
     "globalSetup": null,
@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 2
     },
     "preserveOutput": "always",
     "reporter": [
@@ -33,15 +33,15 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "/Users/mba/Documents/ERICA WORK/web-testkit/test-results",
+        "outputDir": "C:/Users/AM - Shift/Documents/web-testkit/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 2
         },
         "id": "chromium",
         "name": "chromium",
-        "testDir": "/Users/mba/Documents/ERICA WORK/web-testkit/tests",
+        "testDir": "C:/Users/AM - Shift/Documents/web-testkit/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -59,20 +59,20 @@
   },
   "suites": [
     {
-      "title": "url-audit.spec.ts",
-      "file": "url-audit.spec.ts",
+      "title": "multi-url-audit.spec.ts",
+      "file": "multi-url-audit.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Audit Test for: https://anewbride.com/",
-          "file": "url-audit.spec.ts",
-          "line": 26,
+          "title": "Multi-URL Audit Test (9 URLs)",
+          "file": "multi-url-audit.spec.ts",
+          "line": 129,
           "column": 6,
           "specs": [
             {
-              "title": "broken links check only",
+              "title": "audit: https://mexicocitydating.com/about-mexico-city-dating.html",
               "ok": true,
               "tags": [],
               "tests": [
@@ -87,34 +87,54 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 6312,
+                      "duration": 15006,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "\nNavigating to: https://anewbride.com/\n"
+                          "text": "\n================================================================================\n"
                         },
                         {
-                          "text": "Successfully loaded: https://anewbride.com/\n"
+                          "text": "Starting audit for: https://mexicocitydating.com/about-mexico-city-dating.html\n"
                         },
                         {
-                          "text": "Found 0 unique links to check\n"
+                          "text": "================================================================================\n"
                         },
                         {
-                          "text": "\nBroken Links Check for: https://anewbride.com/\n"
+                          "text": "Successfully loaded: https://mexicocitydating.com/about-mexico-city-dating.html\n"
                         },
                         {
-                          "text": "✅ No broken links found!\n"
+                          "text": "Found 64 links to check\n"
+                        },
+                        {
+                          "text": "\n✅ Report saved: C:\\Users\\AM - Shift\\Documents\\web-testkit\\reports\\about-mexico-city-dating.json\n"
+                        },
+                        {
+                          "text": "   Overall Status: FAILED\n"
+                        },
+                        {
+                          "text": "   SEO: 6/6 passed\n"
+                        },
+                        {
+                          "text": "   Broken Links: 12 found\n"
+                        },
+                        {
+                          "text": "   Accessibility: FAILED (3 violations)\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-02T03:45:47.924Z",
+                      "startTime": "2026-01-05T02:11:26.061Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "video",
                           "contentType": "video/webm",
-                          "path": "/Users/mba/Documents/ERICA WORK/web-testkit/test-results/url-audit-Audit-Test-for-h-9ea74-com-broken-links-check-only-chromium/video.webm"
+                          "path": "C:\\Users\\AM - Shift\\Documents\\web-testkit\\test-results\\multi-url-audit-Multi-URL--fea02-out-mexico-city-dating-html-chromium\\video-1.webm"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\AM - Shift\\Documents\\web-testkit\\test-results\\multi-url-audit-Multi-URL--fea02-out-mexico-city-dating-html-chromium\\video.webm"
                         }
                       ]
                     }
@@ -122,10 +142,618 @@
                   "status": "expected"
                 }
               ],
-              "id": "1dfaec8f1a7c1d32c104-ce1bc4fbf5e3884a9cb9",
-              "file": "url-audit.spec.ts",
-              "line": 122,
-              "column": 7
+              "id": "1b721668d2456eb392f1-da9bf85fe7847c7bc6d5",
+              "file": "multi-url-audit.spec.ts",
+              "line": 131,
+              "column": 9
+            },
+            {
+              "title": "audit: https://mexicocitydating.com/all-about-mexico-city.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 14237,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\n================================================================================\n"
+                        },
+                        {
+                          "text": "Starting audit for: https://mexicocitydating.com/all-about-mexico-city.html\n"
+                        },
+                        {
+                          "text": "================================================================================\n"
+                        },
+                        {
+                          "text": "Successfully loaded: https://mexicocitydating.com/all-about-mexico-city.html\n"
+                        },
+                        {
+                          "text": "Found 65 links to check\n"
+                        },
+                        {
+                          "text": "\n✅ Report saved: C:\\Users\\AM - Shift\\Documents\\web-testkit\\reports\\all-about-mexico-city.json\n"
+                        },
+                        {
+                          "text": "   Overall Status: FAILED\n"
+                        },
+                        {
+                          "text": "   SEO: 6/6 passed\n"
+                        },
+                        {
+                          "text": "   Broken Links: 12 found\n"
+                        },
+                        {
+                          "text": "   Accessibility: FAILED (3 violations)\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-05T02:11:26.036Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\AM - Shift\\Documents\\web-testkit\\test-results\\multi-url-audit-Multi-URL--3d0ff--all-about-mexico-city-html-chromium\\video.webm"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\AM - Shift\\Documents\\web-testkit\\test-results\\multi-url-audit-Multi-URL--3d0ff--all-about-mexico-city-html-chromium\\video-1.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1b721668d2456eb392f1-035f6e8b8150ab566814",
+              "file": "multi-url-audit.spec.ts",
+              "line": 131,
+              "column": 9
+            },
+            {
+              "title": "audit: https://mexicocitydating.com/conversation-starters-with-mexican-women.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 13890,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\n================================================================================\n"
+                        },
+                        {
+                          "text": "Starting audit for: https://mexicocitydating.com/conversation-starters-with-mexican-women.html\n"
+                        },
+                        {
+                          "text": "================================================================================\n"
+                        },
+                        {
+                          "text": "Successfully loaded: https://mexicocitydating.com/conversation-starters-with-mexican-women.html\n"
+                        },
+                        {
+                          "text": "Found 65 links to check\n"
+                        },
+                        {
+                          "text": "\n✅ Report saved: C:\\Users\\AM - Shift\\Documents\\web-testkit\\reports\\conversation-starters-with-mexican-women.json\n"
+                        },
+                        {
+                          "text": "   Overall Status: FAILED\n"
+                        },
+                        {
+                          "text": "   SEO: 6/6 passed\n"
+                        },
+                        {
+                          "text": "   Broken Links: 12 found\n"
+                        },
+                        {
+                          "text": "   Accessibility: FAILED (3 violations)\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-05T02:11:40.428Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\AM - Shift\\Documents\\web-testkit\\test-results\\multi-url-audit-Multi-URL--cca4b-ers-with-mexican-women-html-chromium\\video-1.webm"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\AM - Shift\\Documents\\web-testkit\\test-results\\multi-url-audit-Multi-URL--cca4b-ers-with-mexican-women-html-chromium\\video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1b721668d2456eb392f1-cd354916b8f059eb0cba",
+              "file": "multi-url-audit.spec.ts",
+              "line": 131,
+              "column": 9
+            },
+            {
+              "title": "audit: https://mexicocitydating.com/dating-apps-vs-mexico-city-dating.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 18261,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\n================================================================================\n"
+                        },
+                        {
+                          "text": "Starting audit for: https://mexicocitydating.com/dating-apps-vs-mexico-city-dating.html\n"
+                        },
+                        {
+                          "text": "================================================================================\n"
+                        },
+                        {
+                          "text": "Successfully loaded: https://mexicocitydating.com/dating-apps-vs-mexico-city-dating.html\n"
+                        },
+                        {
+                          "text": "Found 65 links to check\n"
+                        },
+                        {
+                          "text": "\n✅ Report saved: C:\\Users\\AM - Shift\\Documents\\web-testkit\\reports\\dating-apps-vs-mexico-city-dating.json\n"
+                        },
+                        {
+                          "text": "   Overall Status: FAILED\n"
+                        },
+                        {
+                          "text": "   SEO: 6/6 passed\n"
+                        },
+                        {
+                          "text": "   Broken Links: 12 found\n"
+                        },
+                        {
+                          "text": "   Accessibility: FAILED (3 violations)\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-05T02:11:41.329Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\AM - Shift\\Documents\\web-testkit\\test-results\\multi-url-audit-Multi-URL--b6300--vs-mexico-city-dating-html-chromium\\video-1.webm"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\AM - Shift\\Documents\\web-testkit\\test-results\\multi-url-audit-Multi-URL--b6300--vs-mexico-city-dating-html-chromium\\video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1b721668d2456eb392f1-54fe0781ab72bdf12229",
+              "file": "multi-url-audit.spec.ts",
+              "line": 131,
+              "column": 9
+            },
+            {
+              "title": "audit: https://mexicocitydating.com/dating-culture-mexico.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 14278,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\n================================================================================\n"
+                        },
+                        {
+                          "text": "Starting audit for: https://mexicocitydating.com/dating-culture-mexico.html\n"
+                        },
+                        {
+                          "text": "================================================================================\n"
+                        },
+                        {
+                          "text": "Successfully loaded: https://mexicocitydating.com/dating-culture-mexico.html\n"
+                        },
+                        {
+                          "text": "Found 64 links to check\n"
+                        },
+                        {
+                          "text": "\n✅ Report saved: C:\\Users\\AM - Shift\\Documents\\web-testkit\\reports\\dating-culture-mexico.json\n"
+                        },
+                        {
+                          "text": "   Overall Status: FAILED\n"
+                        },
+                        {
+                          "text": "   SEO: 6/6 passed\n"
+                        },
+                        {
+                          "text": "   Broken Links: 12 found\n"
+                        },
+                        {
+                          "text": "   Accessibility: FAILED (3 violations)\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-05T02:11:54.337Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\AM - Shift\\Documents\\web-testkit\\test-results\\multi-url-audit-Multi-URL--819df--dating-culture-mexico-html-chromium\\video-1.webm"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\AM - Shift\\Documents\\web-testkit\\test-results\\multi-url-audit-Multi-URL--819df--dating-culture-mexico-html-chromium\\video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1b721668d2456eb392f1-dfce507a27da92aed4d8",
+              "file": "multi-url-audit.spec.ts",
+              "line": 131,
+              "column": 9
+            },
+            {
+              "title": "audit: https://mexicocitydating.com/do-mexican-women-want-to-marry-foreign-men.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 13716,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\n================================================================================\n"
+                        },
+                        {
+                          "text": "Starting audit for: https://mexicocitydating.com/do-mexican-women-want-to-marry-foreign-men.html\n"
+                        },
+                        {
+                          "text": "================================================================================\n"
+                        },
+                        {
+                          "text": "Successfully loaded: https://mexicocitydating.com/do-mexican-women-want-to-marry-foreign-men.html\n"
+                        },
+                        {
+                          "text": "Found 64 links to check\n"
+                        },
+                        {
+                          "text": "\n✅ Report saved: C:\\Users\\AM - Shift\\Documents\\web-testkit\\reports\\do-mexican-women-want-to-marry-foreign-men.json\n"
+                        },
+                        {
+                          "text": "   Overall Status: FAILED\n"
+                        },
+                        {
+                          "text": "   SEO: 6/6 passed\n"
+                        },
+                        {
+                          "text": "   Broken Links: 12 found\n"
+                        },
+                        {
+                          "text": "   Accessibility: FAILED (3 violations)\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-05T02:11:59.679Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\AM - Shift\\Documents\\web-testkit\\test-results\\multi-url-audit-Multi-URL--f6aae-t-to-marry-foreign-men-html-chromium\\video-1.webm"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\AM - Shift\\Documents\\web-testkit\\test-results\\multi-url-audit-Multi-URL--f6aae-t-to-marry-foreign-men-html-chromium\\video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1b721668d2456eb392f1-e4abf74debb4f37c2160",
+              "file": "multi-url-audit.spec.ts",
+              "line": 131,
+              "column": 9
+            },
+            {
+              "title": "audit: https://mexicocitydating.com/find-love-international-matchmaking.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 15283,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\n================================================================================\n"
+                        },
+                        {
+                          "text": "Starting audit for: https://mexicocitydating.com/find-love-international-matchmaking.html\n"
+                        },
+                        {
+                          "text": "================================================================================\n"
+                        },
+                        {
+                          "text": "Successfully loaded: https://mexicocitydating.com/find-love-international-matchmaking.html\n"
+                        },
+                        {
+                          "text": "Found 65 links to check\n"
+                        },
+                        {
+                          "text": "\n✅ Report saved: C:\\Users\\AM - Shift\\Documents\\web-testkit\\reports\\find-love-international-matchmaking.json\n"
+                        },
+                        {
+                          "text": "   Overall Status: FAILED\n"
+                        },
+                        {
+                          "text": "   SEO: 6/6 passed\n"
+                        },
+                        {
+                          "text": "   Broken Links: 12 found\n"
+                        },
+                        {
+                          "text": "   Accessibility: FAILED (3 violations)\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-05T02:12:08.633Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\AM - Shift\\Documents\\web-testkit\\test-results\\multi-url-audit-Multi-URL--131f7-ernational-matchmaking-html-chromium\\video-1.webm"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\AM - Shift\\Documents\\web-testkit\\test-results\\multi-url-audit-Multi-URL--131f7-ernational-matchmaking-html-chromium\\video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1b721668d2456eb392f1-9d646e65d66772589519",
+              "file": "multi-url-audit.spec.ts",
+              "line": 131,
+              "column": 9
+            },
+            {
+              "title": "audit: https://mexicocitydating.com/how-to-meet-mexican-women.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 15814,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\n================================================================================\n"
+                        },
+                        {
+                          "text": "Starting audit for: https://mexicocitydating.com/how-to-meet-mexican-women.html\n"
+                        },
+                        {
+                          "text": "================================================================================\n"
+                        },
+                        {
+                          "text": "Successfully loaded: https://mexicocitydating.com/how-to-meet-mexican-women.html\n"
+                        },
+                        {
+                          "text": "Found 67 links to check\n"
+                        },
+                        {
+                          "text": "\n✅ Report saved: C:\\Users\\AM - Shift\\Documents\\web-testkit\\reports\\how-to-meet-mexican-women.json\n"
+                        },
+                        {
+                          "text": "   Overall Status: FAILED\n"
+                        },
+                        {
+                          "text": "   SEO: 6/6 passed\n"
+                        },
+                        {
+                          "text": "   Broken Links: 13 found\n"
+                        },
+                        {
+                          "text": "   Accessibility: FAILED (5 violations)\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-05T02:12:13.421Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\AM - Shift\\Documents\\web-testkit\\test-results\\multi-url-audit-Multi-URL--8c306--to-meet-mexican-women-html-chromium\\video-1.webm"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\AM - Shift\\Documents\\web-testkit\\test-results\\multi-url-audit-Multi-URL--8c306--to-meet-mexican-women-html-chromium\\video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1b721668d2456eb392f1-1d75e7623653eed32523",
+              "file": "multi-url-audit.spec.ts",
+              "line": 131,
+              "column": 9
+            },
+            {
+              "title": "audit: https://mexicocitydating.com/error-404.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 14117,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\n================================================================================\n"
+                        },
+                        {
+                          "text": "Starting audit for: https://mexicocitydating.com/error-404.html\n"
+                        },
+                        {
+                          "text": "================================================================================\n"
+                        },
+                        {
+                          "text": "Successfully loaded: https://mexicocitydating.com/error-404.html\n"
+                        },
+                        {
+                          "text": "Found 65 links to check\n"
+                        },
+                        {
+                          "text": "\n✅ Report saved: C:\\Users\\AM - Shift\\Documents\\web-testkit\\reports\\error-404.json\n"
+                        },
+                        {
+                          "text": "   Overall Status: FAILED\n"
+                        },
+                        {
+                          "text": "   SEO: 5/6 passed\n"
+                        },
+                        {
+                          "text": "   Broken Links: 12 found\n"
+                        },
+                        {
+                          "text": "   Accessibility: FAILED (3 violations)\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-05T02:12:23.936Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\AM - Shift\\Documents\\web-testkit\\test-results\\multi-url-audit-Multi-URL--c2996-tydating-com-error-404-html-chromium\\video.webm"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\AM - Shift\\Documents\\web-testkit\\test-results\\multi-url-audit-Multi-URL--c2996-tydating-com-error-404-html-chromium\\video-1.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1b721668d2456eb392f1-3f399646c91636d59a36",
+              "file": "multi-url-audit.spec.ts",
+              "line": 131,
+              "column": 9
             }
           ]
         }
@@ -134,9 +762,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-02T03:45:45.876Z",
-    "duration": 10037.949,
-    "expected": 1,
+    "startTime": "2026-01-05T02:11:24.309Z",
+    "duration": 73862.199,
+    "expected": 9,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

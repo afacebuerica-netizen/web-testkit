@@ -18,9 +18,11 @@ import { formatErrorWithContext, getCurrentUrl } from '../utils/error-handling';
  * Comprehensive audit test that runs SEO, broken links, and accessibility checks
  * This is useful for running a full site audit on a single page
  */
+const BASE_URL = process.env.URL_AUDIT_URL || process.env.BASE_URL || 'https://anewbride.com/';
+
 test.describe('Comprehensive Site Audit', () => {
   test('full audit of homepage', async ({ page }) => {
-    const testUrl = 'https://anewbride.com/';
+    const testUrl = BASE_URL;
     
     try {
       console.log(`\nNavigating to: ${testUrl}`);
@@ -69,7 +71,7 @@ test.describe('Comprehensive Site Audit', () => {
   });
 
   test('full audit of tour page', async ({ page }) => {
-    const testUrl = 'https://anewbride.com/tour/things-to-consider-on-singles-tours.html';
+    const testUrl = process.env.TOUR_PAGE_URL || `${BASE_URL}tour/things-to-consider-on-singles-tours.html`;
     
     try {
       console.log(`\nNavigating to: ${testUrl}`);
