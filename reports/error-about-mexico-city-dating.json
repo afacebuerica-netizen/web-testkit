@@ -1,8 +1,0 @@
-{
-  "url": "https://mexicocitydating.com/about-mexico-city-dating.html",
-  "timestamp": "2026-01-05T02:11:00.937Z",
-  "error": true,
-  "errorMessage": "Failed to navigate to https://mexicocitydating.com/about-mexico-city-dating.html\nURL before navigation: https://mexicocitydating.com/about-mexico-city-dating.html\nURL after navigation: https://mexicocitydating.com/about-mexico-city-dating.html\nOriginal error: page.goto: Test ended.\nCall log:\n\u001b[2m  - navigating to \"https://mexicocitydating.com/about-mexico-city-dating.html\", waiting until \"networkidle\"\u001b[22m\n",
-  "errorStack": "page.goto: Test ended.\nCall log:\n\u001b[2m  - navigating to \"https://mexicocitydating.com/about-mexico-city-dating.html\", waiting until \"networkidle\"\u001b[22m\n\n    at gotoAndWait (C:\\Users\\AM - Shift\\Documents\\web-testkit\\utils\\page-load.ts:63:16)\n    at C:\\Users\\AM - Shift\\Documents\\web-testkit\\tests\\multi-url-audit.spec.ts:140:26",
-  "finalUrl": "https://mexicocitydating.com/about-mexico-city-dating.html"
-}

@@ -1,6 +1,6 @@
 {
-  "url": "https://mexicocitydating.com/dating-apps-vs-mexico-city-dating.html",
-  "timestamp": "2026-01-05T06:00:10.082Z",
+  "url": "https://mexicocitydating.com/why-date-mexican-women.html",
+  "timestamp": "2026-01-05T06:02:34.069Z",
   "summary": {
     "overallStatus": "failed",
     "seoPassed": true,
@@ -12,20 +12,20 @@
       {
         "check": "Page Title",
         "passed": true,
-        "message": "Page title is present: \"Dating Apps vs. Mexico City Dating\"",
-        "value": "Dating Apps vs. Mexico City Dating"
+        "message": "Page title is present: \"Why Date Mexican Women?\"",
+        "value": "Why Date Mexican Women?"
       },
       {
         "check": "Meta Description",
         "passed": true,
-        "message": "Meta description has appropriate length (150 chars)",
-        "value": "Find out why Mexico City Dating is a more reliable option than regular dating apps when it comes to finding love and building long-term relationships."
+        "message": "Meta description has appropriate length (111 chars)",
+        "value": "Interested in dating Mexican women? Learn about their qualities to know why they’re worth being a life partner."
       },
       {
         "check": "Canonical URL",
         "passed": true,
-        "message": "Canonical URL is present: \"https://mexicocitydating.com/dating-apps-vs-mexico-city-dating.html\"",
-        "value": "https://mexicocitydating.com/dating-apps-vs-mexico-city-dating.html"
+        "message": "Canonical URL is present: \"https://mexicocitydating.com/why-date-mexican-women.html\"",
+        "value": "https://mexicocitydating.com/why-date-mexican-women.html"
       },
       {
         "check": "Robots Meta Tag",
@@ -42,7 +42,7 @@
         "check": "Heading Structure",
         "passed": true,
         "message": "Proper heading structure: 1 H1 found",
-        "value": "H1: Dating Apps vs. Mexico City Dating"
+        "value": "H1: Why Date Mexican Women?"
       }
     ],
     "passedCount": 6,
@@ -129,7 +129,7 @@
   },
   "accessibility": {
     "passed": false,
-    "totalViolations": 3,
+    "totalViolations": 4,
     "totalIncomplete": 0,
     "violations": [
       {
@@ -274,6 +274,61 @@
         ]
       },
       {
+        "id": "empty-heading",
+        "impact": "minor",
+        "tags": [
+          "cat.name-role-value",
+          "best-practice"
+        ],
+        "description": "Ensure headings have discernible text",
+        "help": "Headings should not be empty",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element does not have text that is visible to screen readers"
+              },
+              {
+                "id": "aria-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "aria-label attribute does not exist or is empty"
+              },
+              {
+                "id": "aria-labelledby",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+              },
+              {
+                "id": "non-empty-title",
+                "data": {
+                  "messageKey": "noAttr"
+                },
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element has no title attribute"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "minor",
+            "html": "<h2></h2>",
+            "target": [
+              "h2:nth-child(24)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+          }
+        ]
+      },
+      {
         "id": "link-name",
         "impact": "serious",
         "tags": [
@@ -352,9 +407,9 @@
     "incomplete": []
   },
   "metadata": {
-    "pageTitle": "Dating Apps vs. Mexico City Dating",
-    "metaDescription": "Find out why Mexico City Dating is a more reliable option than regular dating apps when it comes to finding love and building long-term relationships.",
-    "canonicalUrl": "https://mexicocitydating.com/dating-apps-vs-mexico-city-dating.html",
+    "pageTitle": "Why Date Mexican Women?",
+    "metaDescription": "Interested in dating Mexican women? Learn about their qualities to know why they’re worth being a life partner.",
+    "canonicalUrl": "https://mexicocitydating.com/why-date-mexican-women.html",
     "robotsMetaTag": "index, follow"
   }
 }

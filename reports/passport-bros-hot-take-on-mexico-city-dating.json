@@ -1,9 +1,9 @@
 {
-  "url": "https://mexicocitydating.com/dating-apps-vs-mexico-city-dating.html",
-  "timestamp": "2026-01-05T06:00:10.082Z",
+  "url": "https://mexicocitydating.com/mexico-city-dating-tour-videos/testimonial/passport-bros-hot-take-on-mexico-city-dating.html",
+  "timestamp": "2026-01-05T06:08:23.260Z",
   "summary": {
     "overallStatus": "failed",
-    "seoPassed": true,
+    "seoPassed": false,
     "brokenLinksCount": 12,
     "accessibilityPassed": false
   },
@@ -12,20 +12,20 @@
       {
         "check": "Page Title",
         "passed": true,
-        "message": "Page title is present: \"Dating Apps vs. Mexico City Dating\"",
-        "value": "Dating Apps vs. Mexico City Dating"
+        "message": "Page title is present: \"Passport Bros’ HOT TAKE on Mexico City Dating\"",
+        "value": "Passport Bros’ HOT TAKE on Mexico City Dating"
       },
       {
         "check": "Meta Description",
-        "passed": true,
-        "message": "Meta description has appropriate length (150 chars)",
-        "value": "Find out why Mexico City Dating is a more reliable option than regular dating apps when it comes to finding love and building long-term relationships."
+        "passed": false,
+        "message": "Meta description is too long (172 chars, recommended: 50-160)",
+        "value": "Mexican women are admired for their incomparable beauty and traditionally feminine characteristics. It's no wonder that they catch the attention of countless passport bros."
       },
       {
         "check": "Canonical URL",
         "passed": true,
-        "message": "Canonical URL is present: \"https://mexicocitydating.com/dating-apps-vs-mexico-city-dating.html\"",
-        "value": "https://mexicocitydating.com/dating-apps-vs-mexico-city-dating.html"
+        "message": "Canonical URL is present: \"https://mexicocitydating.com/mexico-city-dating-tour-videos/testimonial/passport-bros-hot-take-on-mexico-city-dating.html\"",
+        "value": "https://mexicocitydating.com/mexico-city-dating-tour-videos/testimonial/passport-bros-hot-take-on-mexico-city-dating.html"
       },
       {
         "check": "Robots Meta Tag",
@@ -36,18 +36,25 @@
       {
         "check": "Image Alt Attributes",
         "passed": true,
-        "message": "All 11 images have alt attributes"
+        "message": "All 9 images have alt attributes"
       },
       {
         "check": "Heading Structure",
         "passed": true,
         "message": "Proper heading structure: 1 H1 found",
-        "value": "H1: Dating Apps vs. Mexico City Dating"
+        "value": "H1: Passport Bros’ HOT TAKE on Mexico City Dating"
       }
     ],
-    "passedCount": 6,
+    "passedCount": 5,
     "totalCount": 6,
-    "failedChecks": []
+    "failedChecks": [
+      {
+        "check": "Meta Description",
+        "passed": false,
+        "message": "Meta description is too long (172 chars, recommended: 50-160)",
+        "value": "Mexican women are admired for their incomparable beauty and traditionally feminine characteristics. It's no wonder that they catch the attention of countless passport bros."
+      }
+    ]
   },
   "brokenLinks": {
     "totalChecked": 12,
@@ -129,9 +136,54 @@
   },
   "accessibility": {
     "passed": false,
-    "totalViolations": 3,
+    "totalViolations": 5,
     "totalIncomplete": 0,
     "violations": [
+      {
+        "id": "aria-prohibited-attr",
+        "impact": "serious",
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412",
+          "EN-301-549",
+          "EN-9.4.1.2",
+          "RGAAv4",
+          "RGAA-7.1.1"
+        ],
+        "description": "Ensure ARIA attributes are not prohibited for an element's role",
+        "help": "Elements must only use permitted ARIA attributes",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/aria-prohibited-attr?application=playwright",
+        "nodes": [
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "aria-prohibited-attr",
+                "data": {
+                  "role": null,
+                  "nodeName": "div",
+                  "messageKey": "noRoleSingular",
+                  "prohibited": [
+                    "aria-label"
+                  ]
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-label attribute cannot be used on a div with no valid role attribute."
+              }
+            ],
+            "impact": "serious",
+            "html": "<div class=\"html5-video-player ytp-hide-controls ytp-exp-bottom-control-flexbox ytp-modern-caption ytp-livebadge-color unstarted-mode\" tabindex=\"\" id=\"movie_player\" data-version=\"/s/player/50cc0679/player_embed.vflset/en_US/base.js\" aria-label=\"YouTube Video Player\">",
+            "target": [
+              "iframe",
+              "#movie_player"
+            ],
+            "failureSummary": "Fix all of the following:\n  aria-label attribute cannot be used on a div with no valid role attribute."
+          }
+        ]
+      },
       {
         "id": "button-name",
         "impact": "critical",
@@ -274,6 +326,70 @@
         ]
       },
       {
+        "id": "frame-title",
+        "impact": "serious",
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag412",
+          "section508",
+          "section508.22.i",
+          "TTv5",
+          "TT12.d",
+          "EN-301-549",
+          "EN-9.4.1.2",
+          "RGAAv4",
+          "RGAA-2.1.1"
+        ],
+        "description": "Ensure <iframe> and <frame> elements have an accessible name",
+        "help": "Frames must have an accessible name",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "non-empty-title",
+                "data": {
+                  "messageKey": "noAttr"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has no title attribute"
+              },
+              {
+                "id": "aria-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-label attribute does not exist or is empty"
+              },
+              {
+                "id": "aria-labelledby",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+              },
+              {
+                "id": "presentational-role",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<iframe width=\"640\" height=\"480\" allowfullscreen=\"true\" autoplay=\"false\" disablekbcontrols=\"false\" enableiframeapi=\"false\" endtime=\"0\" ivloadpolicy=\"0\" loop=\"false\" modestbranding=\"false\" src=\"https://www.youtube-nocookie.com/embed/SIkiOFpP5fo\"></iframe>",
+            "target": [
+              "iframe"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+          }
+        ]
+      },
+      {
         "id": "link-name",
         "impact": "serious",
         "tags": [
@@ -352,9 +468,9 @@
     "incomplete": []
   },
   "metadata": {
-    "pageTitle": "Dating Apps vs. Mexico City Dating",
-    "metaDescription": "Find out why Mexico City Dating is a more reliable option than regular dating apps when it comes to finding love and building long-term relationships.",
-    "canonicalUrl": "https://mexicocitydating.com/dating-apps-vs-mexico-city-dating.html",
+    "pageTitle": "Passport Bros’ HOT TAKE on Mexico City Dating",
+    "metaDescription": "Mexican women are admired for their incomparable beauty and traditionally feminine characteristics. It's no wonder that they catch the attention of countless passport bros.",
+    "canonicalUrl": "https://mexicocitydating.com/mexico-city-dating-tour-videos/testimonial/passport-bros-hot-take-on-mexico-city-dating.html",
     "robotsMetaTag": "index, follow"
   }
 }

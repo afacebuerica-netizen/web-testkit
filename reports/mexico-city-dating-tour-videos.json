@@ -1,0 +1,641 @@
+{
+  "url": "https://mexicocitydating.com/mexico-city-dating-tour-videos/",
+  "timestamp": "2026-01-05T06:09:40.794Z",
+  "summary": {
+    "overallStatus": "failed",
+    "seoPassed": true,
+    "brokenLinksCount": 12,
+    "accessibilityPassed": false
+  },
+  "seo": {
+    "results": [
+      {
+        "check": "Page Title",
+        "passed": true,
+        "message": "Page title is present: \"Mexico City Dating Tour Videos\"",
+        "value": "Mexico City Dating Tour Videos"
+      },
+      {
+        "check": "Meta Description",
+        "passed": true,
+        "message": "Meta description has appropriate length (137 chars)",
+        "value": "Want to know what our singles tours are all about? Check out what our clients have to say about their experience with Mexico City Dating!"
+      },
+      {
+        "check": "Canonical URL",
+        "passed": true,
+        "message": "Canonical URL is present: \"https://mexicocitydating.com/mexico-city-dating-tour-videos.html\"",
+        "value": "https://mexicocitydating.com/mexico-city-dating-tour-videos.html"
+      },
+      {
+        "check": "Robots Meta Tag",
+        "passed": true,
+        "message": "Robots meta tag is properly configured: \"index, follow\"",
+        "value": "index, follow"
+      },
+      {
+        "check": "Image Alt Attributes",
+        "passed": true,
+        "message": "All 15 images have alt attributes"
+      },
+      {
+        "check": "Heading Structure",
+        "passed": true,
+        "message": "Proper heading structure: 1 H1 found",
+        "value": "H1: Mexico City Dating Tour Videos"
+      }
+    ],
+    "passedCount": 6,
+    "totalCount": 6,
+    "failedChecks": []
+  },
+  "brokenLinks": {
+    "totalChecked": 12,
+    "brokenCount": 12,
+    "brokenLinks": [
+      {
+        "url": "https://mexicocitydating.com/latin_club",
+        "status": 404,
+        "statusText": "Not Found",
+        "isBroken": true
+      },
+      {
+        "url": "https://mexicocitydating.com/search-nikolaev-women-seeking-men",
+        "status": 404,
+        "statusText": "Not Found",
+        "isBroken": true
+      },
+      {
+        "url": "https://mexicocitydating.com/gifts",
+        "status": 404,
+        "statusText": "Not Found",
+        "isBroken": true
+      },
+      {
+        "url": "https://mexicocitydating.com/fiancee-visa",
+        "status": 404,
+        "statusText": "Not Found",
+        "isBroken": true
+      },
+      {
+        "url": "https://mexicocitydating.com/dating",
+        "status": 404,
+        "statusText": "Not Found",
+        "isBroken": true
+      },
+      {
+        "url": "https://mexicocitydating.com/culture",
+        "status": 404,
+        "statusText": "Not Found",
+        "isBroken": true
+      },
+      {
+        "url": "https://mexicocitydating.com/psychology",
+        "status": 404,
+        "statusText": "Not Found",
+        "isBroken": true
+      },
+      {
+        "url": "https://mexicocitydating.com/travel",
+        "status": 404,
+        "statusText": "Not Found",
+        "isBroken": true
+      },
+      {
+        "url": "https://mexicocitydating.com/realities",
+        "status": 404,
+        "statusText": "Not Found",
+        "isBroken": true
+      },
+      {
+        "url": "https://mexicocitydating.com/our-Process",
+        "status": 404,
+        "statusText": "Not Found",
+        "isBroken": true
+      },
+      {
+        "url": "https://www.facebook.com/mexicocitydatingofficial",
+        "status": 400,
+        "statusText": "Bad Request",
+        "isBroken": true
+      },
+      {
+        "url": "https://x.com/MexiCityDating",
+        "status": 403,
+        "statusText": "Forbidden",
+        "isBroken": true
+      }
+    ]
+  },
+  "accessibility": {
+    "passed": false,
+    "totalViolations": 4,
+    "totalIncomplete": 1,
+    "violations": [
+      {
+        "id": "button-name",
+        "impact": "critical",
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412",
+          "section508",
+          "section508.22.a",
+          "TTv5",
+          "TT6.a",
+          "EN-301-549",
+          "EN-9.4.1.2",
+          "ACT",
+          "RGAAv4",
+          "RGAA-11.9.1"
+        ],
+        "description": "Ensure buttons have discernible text",
+        "help": "Buttons must have discernible text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "button-has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element does not have inner text that is visible to screen readers"
+              },
+              {
+                "id": "aria-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "aria-label attribute does not exist or is empty"
+              },
+              {
+                "id": "aria-labelledby",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+              },
+              {
+                "id": "non-empty-title",
+                "data": {
+                  "messageKey": "noAttr"
+                },
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element has no title attribute"
+              },
+              {
+                "id": "implicit-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element does not have an implicit (wrapped) <label>"
+              },
+              {
+                "id": "explicit-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element does not have an explicit <label>"
+              },
+              {
+                "id": "presentational-role",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "critical",
+            "html": "<button class=\"fc-megamenu\" type=\"button\" onclick=\"openNav()\">",
+            "target": [
+              ".fc-megamenu"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+          }
+        ]
+      },
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT",
+          "RGAAv4",
+          "RGAA-3.2.1"
+        ],
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#ffffff",
+                  "bgColor": "#0d9365",
+                  "contrastRatio": 3.9,
+                  "fontSize": "8.3pt (11px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<a id=\"signup\" href=\"#\" class=\"text-decoration-none top-header-signup\" data-bs-toggle=\"modal\" data-bs-target=\".register-modal\">",
+                    "target": [
+                      "#signup"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 3.9 (foreground color: #ffffff, background color: #0d9365, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a id=\"signup\" href=\"#\" class=\"text-decoration-none top-header-signup\" data-bs-toggle=\"modal\" data-bs-target=\".register-modal\">",
+            "target": [
+              "#signup"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.9 (foreground color: #ffffff, background color: #0d9365, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      },
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "description": "Ensure landmarks are unique",
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "landmark-is-unique",
+                "data": {
+                  "role": "navigation",
+                  "accessibleText": null
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<nav>",
+                    "target": [
+                      ".border-bottom > nav"
+                    ]
+                  }
+                ],
+                "impact": "moderate",
+                "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<nav class=\"header-right-nav pt-3\">",
+            "target": [
+              ".header-right-nav"
+            ],
+            "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+          }
+        ]
+      },
+      {
+        "id": "link-name",
+        "impact": "serious",
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag244",
+          "wcag412",
+          "section508",
+          "section508.22.a",
+          "TTv5",
+          "TT6.a",
+          "EN-301-549",
+          "EN-9.2.4.4",
+          "EN-9.4.1.2",
+          "ACT",
+          "RGAAv4",
+          "RGAA-6.2.1"
+        ],
+        "description": "Ensure links have discernible text",
+        "help": "Links must have discernible text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element does not have text that is visible to screen readers"
+              },
+              {
+                "id": "aria-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-label attribute does not exist or is empty"
+              },
+              {
+                "id": "aria-labelledby",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+              },
+              {
+                "id": "non-empty-title",
+                "data": {
+                  "messageKey": "noAttr"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has no title attribute"
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element is in tab order and does not have accessible text"
+              }
+            ],
+            "impact": "serious",
+            "html": "<a href=\"\" class=\"go-btn\">",
+            "target": [
+              ".go-btn"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+          }
+        ]
+      }
+    ],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT",
+          "RGAAv4",
+          "RGAA-3.2.1"
+        ],
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<p class=\"m-0 vid-desc\">\n                Mexican Latinas have garnered a reputation for their immense beauty and traditionally feminine characteristics, making them highly sought after.\n                </p>",
+                    "target": [
+                      ".col-sm-6.col-lg-4.mb-md-5:nth-child(1) > .gap-md-3.align-items-start.video-card > .vid-desc"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"m-0 vid-desc\">\n                Mexican Latinas have garnered a reputation for their immense beauty and traditionally feminine characteristics, making them highly sought after.\n                </p>",
+            "target": [
+              ".col-sm-6.col-lg-4.mb-md-5:nth-child(1) > .gap-md-3.align-items-start.video-card > .vid-desc"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<a href=\"/mexico-city-dating-tour-videos/tours/mexican-women-desire-foreign-men.html\" class=\"text-decoration-none text-dark d-flex flex-column gap-2 gap-md-3 align-items-start video-card\">",
+                    "target": [
+                      ".col-sm-6.col-lg-4.mb-md-5:nth-child(2) > .gap-md-3.align-items-start.video-card"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h3 class=\"fs-5 m-0\">Mexican Women DESIRE Foreign Men</h3>",
+            "target": [
+              ".col-sm-6.col-lg-4.mb-md-5:nth-child(2) > .gap-md-3.align-items-start.video-card > .fs-5"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<p class=\"m-0 vid-desc\">\n                As more Colombian women open themselves to the possibility of interracial dating, more foreign men are motivated to travel to experience international dating. G...\n                </p>",
+                    "target": [
+                      ".col-sm-6.col-lg-4.mb-md-5:nth-child(2) > .gap-md-3.align-items-start.video-card > .vid-desc"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"m-0 vid-desc\">\n                As more Colombian women open themselves to the possibility of interracial dating, more foreign men are motivated to travel to experience international dating. G...\n                </p>",
+            "target": [
+              ".col-sm-6.col-lg-4.mb-md-5:nth-child(2) > .gap-md-3.align-items-start.video-card > .vid-desc"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<p class=\"m-0 vid-desc\">\n                Mature Mexican Latinas who prefer dating beyond borders without apps draw more solo travels to CDMX a few times a year.\n                </p>",
+                    "target": [
+                      ".col-sm-6.col-lg-4.mb-md-5:nth-child(3) > .gap-md-3.align-items-start.video-card > .vid-desc"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"m-0 vid-desc\">\n                Mature Mexican Latinas who prefer dating beyond borders without apps draw more solo travels to CDMX a few times a year.\n                </p>",
+            "target": [
+              ".col-sm-6.col-lg-4.mb-md-5:nth-child(3) > .gap-md-3.align-items-start.video-card > .vid-desc"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<p class=\"m-0 vid-desc\">\n                The allure of Mexican women captivates a legion of men seeking genuine connections and lasting relationships. Many men delve into the realm of Mexican dating th...\n                </p>",
+                    "target": [
+                      ".col-sm-6.col-lg-4.mb-md-5:nth-child(4) > .gap-md-3.align-items-start.video-card > .vid-desc"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"m-0 vid-desc\">\n                The allure of Mexican women captivates a legion of men seeking genuine connections and lasting relationships. Many men delve into the realm of Mexican dating th...\n                </p>",
+            "target": [
+              ".col-sm-6.col-lg-4.mb-md-5:nth-child(4) > .gap-md-3.align-items-start.video-card > .vid-desc"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<a href=\"/mexico-city-dating-tour-videos/tours/anyone-can-date-latinas-in-mexico.html\" class=\"text-decoration-none text-dark d-flex flex-column gap-2 gap-md-3 align-items-start video-card\">",
+                    "target": [
+                      ".col-sm-6.col-lg-4.mb-md-5:nth-child(5) > .gap-md-3.align-items-start.video-card"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h3 class=\"fs-5 m-0\">ANYONE Can Date Latinas in MEXICO</h3>",
+            "target": [
+              ".col-sm-6.col-lg-4.mb-md-5:nth-child(5) > .gap-md-3.align-items-start.video-card > .fs-5"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<p class=\"m-0 vid-desc\">\n                By joining private speed dating events in Mexico, men don’t just have the opportunity to ace live interactions with beautiful Latinas but they also have the cha...\n                </p>",
+                    "target": [
+                      ".col-sm-6.col-lg-4.mb-md-5:nth-child(5) > .gap-md-3.align-items-start.video-card > .vid-desc"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"m-0 vid-desc\">\n                By joining private speed dating events in Mexico, men don’t just have the opportunity to ace live interactions with beautiful Latinas but they also have the cha...\n                </p>",
+            "target": [
+              ".col-sm-6.col-lg-4.mb-md-5:nth-child(5) > .gap-md-3.align-items-start.video-card > .vid-desc"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          }
+        ]
+      }
+    ]
+  },
+  "metadata": {
+    "pageTitle": "Mexico City Dating Tour Videos",
+    "metaDescription": "Want to know what our singles tours are all about? Check out what our clients have to say about their experience with Mexico City Dating!",
+    "canonicalUrl": "https://mexicocitydating.com/mexico-city-dating-tour-videos.html",
+    "robotsMetaTag": "index, follow"
+  }
+}

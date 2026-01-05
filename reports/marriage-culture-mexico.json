@@ -1,6 +1,6 @@
 {
-  "url": "https://mexicocitydating.com/dating-apps-vs-mexico-city-dating.html",
-  "timestamp": "2026-01-05T06:00:10.082Z",
+  "url": "https://mexicocitydating.com/marriage-culture-mexico.html",
+  "timestamp": "2026-01-05T06:01:16.709Z",
   "summary": {
     "overallStatus": "failed",
     "seoPassed": true,
@@ -12,20 +12,20 @@
       {
         "check": "Page Title",
         "passed": true,
-        "message": "Page title is present: \"Dating Apps vs. Mexico City Dating\"",
-        "value": "Dating Apps vs. Mexico City Dating"
+        "message": "Page title is present: \"Marriage Culture in Mexico\"",
+        "value": "Marriage Culture in Mexico"
       },
       {
         "check": "Meta Description",
         "passed": true,
-        "message": "Meta description has appropriate length (150 chars)",
-        "value": "Find out why Mexico City Dating is a more reliable option than regular dating apps when it comes to finding love and building long-term relationships."
+        "message": "Meta description has appropriate length (97 chars)",
+        "value": "Interested in marrying a Mexican woman? Learn and discover their marriage culture and traditions!"
       },
       {
         "check": "Canonical URL",
         "passed": true,
-        "message": "Canonical URL is present: \"https://mexicocitydating.com/dating-apps-vs-mexico-city-dating.html\"",
-        "value": "https://mexicocitydating.com/dating-apps-vs-mexico-city-dating.html"
+        "message": "Canonical URL is present: \"https://mexicocitydating.com/marriage-culture-mexico.html\"",
+        "value": "https://mexicocitydating.com/marriage-culture-mexico.html"
       },
       {
         "check": "Robots Meta Tag",
@@ -36,13 +36,13 @@
       {
         "check": "Image Alt Attributes",
         "passed": true,
-        "message": "All 11 images have alt attributes"
+        "message": "All 10 images have alt attributes"
       },
       {
         "check": "Heading Structure",
         "passed": true,
         "message": "Proper heading structure: 1 H1 found",
-        "value": "H1: Dating Apps vs. Mexico City Dating"
+        "value": "H1: Marriage Culture in Mexico"
       }
     ],
     "passedCount": 6,
@@ -352,9 +352,9 @@
     "incomplete": []
   },
   "metadata": {
-    "pageTitle": "Dating Apps vs. Mexico City Dating",
-    "metaDescription": "Find out why Mexico City Dating is a more reliable option than regular dating apps when it comes to finding love and building long-term relationships.",
-    "canonicalUrl": "https://mexicocitydating.com/dating-apps-vs-mexico-city-dating.html",
+    "pageTitle": "Marriage Culture in Mexico",
+    "metaDescription": "Interested in marrying a Mexican woman? Learn and discover their marriage culture and traditions!",
+    "canonicalUrl": "https://mexicocitydating.com/marriage-culture-mexico.html",
     "robotsMetaTag": "index, follow"
   }
 }

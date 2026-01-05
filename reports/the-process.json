@@ -1,6 +1,6 @@
 {
-  "url": "https://mexicocitydating.com/dating-apps-vs-mexico-city-dating.html",
-  "timestamp": "2026-01-05T06:00:10.082Z",
+  "url": "https://mexicocitydating.com/execu/the-process.html",
+  "timestamp": "2026-01-05T06:10:37.666Z",
   "summary": {
     "overallStatus": "failed",
     "seoPassed": true,
@@ -12,20 +12,20 @@
       {
         "check": "Page Title",
         "passed": true,
-        "message": "Page title is present: \"Dating Apps vs. Mexico City Dating\"",
-        "value": "Dating Apps vs. Mexico City Dating"
+        "message": "Page title is present: \"The Process - What to Expect from Our Matchmakers\"",
+        "value": "The Process - What to Expect from Our Matchmakers"
       },
       {
         "check": "Meta Description",
         "passed": true,
-        "message": "Meta description has appropriate length (150 chars)",
-        "value": "Find out why Mexico City Dating is a more reliable option than regular dating apps when it comes to finding love and building long-term relationships."
+        "message": "Meta description has appropriate length (147 chars)",
+        "value": "What do professional matchmakers do? Learn more about the process to ensure you're getting the most value out of our exclusive matchmaking service."
       },
       {
         "check": "Canonical URL",
         "passed": true,
-        "message": "Canonical URL is present: \"https://mexicocitydating.com/dating-apps-vs-mexico-city-dating.html\"",
-        "value": "https://mexicocitydating.com/dating-apps-vs-mexico-city-dating.html"
+        "message": "Canonical URL is present: \"https://mexicocitydating.com/execu/the-process.html\"",
+        "value": "https://mexicocitydating.com/execu/the-process.html"
       },
       {
         "check": "Robots Meta Tag",
@@ -36,13 +36,13 @@
       {
         "check": "Image Alt Attributes",
         "passed": true,
-        "message": "All 11 images have alt attributes"
+        "message": "All 10 images have alt attributes"
       },
       {
         "check": "Heading Structure",
         "passed": true,
         "message": "Proper heading structure: 1 H1 found",
-        "value": "H1: Dating Apps vs. Mexico City Dating"
+        "value": "H1: The Process - What to Expect from Our Matchmakers"
       }
     ],
     "passedCount": 6,
@@ -270,6 +270,40 @@
               "#signup"
             ],
             "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.9 (foreground color: #ffffff, background color: #0d9365, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#ffffff",
+                  "bgColor": "#0d9365",
+                  "contrastRatio": 3.9,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"get-started-btn primaryBg\">\n       <a class=\"btn-theme btn-primary-theme-color\" href=\"/invar/sendmess/index.php\">Get Started</a>\n     </div>",
+                    "target": [
+                      ".get-started-btn"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 3.9 (foreground color: #ffffff, background color: #0d9365, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a class=\"btn-theme btn-primary-theme-color\" href=\"/invar/sendmess/index.php\">Get Started</a>",
+            "target": [
+              ".btn-theme"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.9 (foreground color: #ffffff, background color: #0d9365, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
           }
         ]
       },
@@ -352,9 +386,9 @@
     "incomplete": []
   },
   "metadata": {
-    "pageTitle": "Dating Apps vs. Mexico City Dating",
-    "metaDescription": "Find out why Mexico City Dating is a more reliable option than regular dating apps when it comes to finding love and building long-term relationships.",
-    "canonicalUrl": "https://mexicocitydating.com/dating-apps-vs-mexico-city-dating.html",
+    "pageTitle": "The Process - What to Expect from Our Matchmakers",
+    "metaDescription": "What do professional matchmakers do? Learn more about the process to ensure you're getting the most value out of our exclusive matchmaking service.",
+    "canonicalUrl": "https://mexicocitydating.com/execu/the-process.html",
     "robotsMetaTag": "index, follow"
   }
 }
